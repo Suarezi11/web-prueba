@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(/img/cafe-galle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    height: 100vh;
+    min-width: 996px;
+}
+
+.contenedor-logo img {
+    width: 90px;
+    height: 80px;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 20px;
+}
+
+.contenedor-lista {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contenedor-lista li{
+    list-style: none;
+}
+
+.contenedor-lista li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+}
+.contenedor-lista li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    border: solid 1px lightblue;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contenedor-lista li a:hover::before {
+    transform: scaleX(1);
+}
+
+.contenedor-titulo {
+    display: inline-block;
+    margin: 30px 0 0 5px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 600px;
+    height: auto;
+    min-width: 292px;
+}
+ .contenedor-titulo h1 {
+    color: antiquewhite;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .contenedor-titulo p {
+    color: burlywood;
+    font-size: 18px;
+    line-height: 25px;
+ }
+
+ button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 15px;
+    transition: all 0.5s;
+ }
+ button:hover {
+    background-color: lightblue;
+    transform: scale(1.2);
+ }
